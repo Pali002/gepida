@@ -33,11 +33,12 @@ export default function App() {
     <View style={styles.container}>
       <Text>Gepida</Text>
       <Text>05-02 dolgozat</Text>
+      <Text>Név    -    Ár</Text>
 
       <FlatList
       data={bikes}
       renderItem={ ({item}) => (
-        <Text>{item.name}</Text>
+        <Text>{item.name} - {item.price}</Text>
       )}
       />
 
